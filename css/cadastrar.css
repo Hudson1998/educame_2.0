@@ -1,0 +1,183 @@
+@charset "utf8";
+
+#navegacao{
+    position: fixed;
+    display: block;
+    z-index: 5;
+    width: 100%;
+}
+.navbar-brand{
+	padding-left: 40%;
+}
+.logoE{
+    color: rgb(202, 93, 93);
+    border:2px solid rgb(202, 93, 93);
+    position: relative;
+    padding:1px 12px 3px 12px;
+    margin-right: 7px;
+}
+.nomePrinci{
+    letter-spacing: 2px;
+}
+section{
+    margin-top: 64px;
+    display: inline-block;
+    width: 100%;
+    float: right;
+    padding:120px;
+    text-align: justify;
+    padding-bottom: 500px;
+}
+p{
+    text-indent: 20px;
+}
+/*--------------------------------------------------*/
+.perfil{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-color: #121212;
+    box-sizing: border-box;
+    padding-top: 20px;
+    background-blend-mode: overlay;
+    text-align: center;
+}
+.perfil .nome{
+    position: relative;
+    font-family: 'Poppins',sans-serif;
+    display: block;
+    padding:10px;
+}
+.perfil #icone{
+    left: 85%
+}
+.perfil i{
+    width: 30px;
+    position: absolute;
+    display: flex;
+    left: 15px;
+    margin-top: 70px;
+}
+.perfil i:hover{
+    cursor: pointer;
+    color: cyan;
+}
+.foto{
+    position: relative;
+    display: block;
+    width: 130px;
+    height: 130px;
+    background-color: #787878;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 100px;
+    box-sizing: border-box;
+}
+/*---------------------------------------------------*/
+.submenu{
+    position: fixed;
+    width: 0%;
+    padding-top: 56px;
+    height: 100%;
+    background-color: #121212;
+    display: block;
+    box-sizing: border-box;
+    color: white;
+    font-size: 13px;
+    overflow:auto;
+    padding-bottom: 250px;
+    text-transform: capitalize;
+    font-family: 'Poppins',sans-serif;
+}
+.submenu ul{
+    list-style: none;
+    position: relative;
+    left: 0;
+    padding-left: 0;
+    display: block;
+}
+.submenu ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    box-sizing: border-box;
+    padding-left: 14px;
+    border-left: 2px solid rgba(0,0,0,.0);
+   
+}
+.itemPrinci{
+    border-top: 1px solid rgba(255,255,255,.04);
+     border-bottom: 1px solid rgba(255,255,255,.04);
+}
+.submenu ul ul li a{
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+.submenu i{
+   position: absolute;
+   top: 50%;
+   right: 20px;
+   transform: translateY(-50%);
+   font-size: 13px;
+   transition: transform 0.2s;
+}
+.submenu ul ul{
+    position: relative;
+    visibility: hidden;
+    overflow: hidden;
+    max-height: 0;
+    background-color: #171717;
+    transition:all .5s;
+}
+/*
+.submenu ul li:hover ul{
+    height: auto;
+    max-height: 1500px;
+   visibility: visible;
+   position: relative; 
+}
+
+.submenu ul li:hover i{
+    transform: translateY(-50%) rotate(-180deg);
+}
+*/
+.submenu ul li a:hover{
+    background-color: #1e1e1e;
+    color: cyan;
+    border-left:2px solid cyan;
+}
+
+/*---------------------Footer--------------------------*/
+footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    bottom: 0;
+    background-color: #1a1919;
+}
+/*--------barra de rolagem----------------------*/
+.submenu::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 50px;
+}
+
+/* Track */
+.submenu::-webkit-scrollbar-track {
+  background: rgba(0,0,0,.3);
+}
+ 
+/* Handle */
+.submenu::-webkit-scrollbar-thumb {
+  background: #2e2e2e; 
+  border-radius: 100px; 
+}
+
+/* Handle on hover */
+.submenu::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
