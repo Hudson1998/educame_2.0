@@ -1,2 +1,2 @@
-# Estude_web
-Desenvolvimento de um site de estudos com funcionalidades de se adicionar material e conteudos
+# Educame 2.0 - Studyng pl ataform
+PLataforma para registro e consulta de pesquisas e estudos digitados
